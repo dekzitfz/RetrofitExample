@@ -9,14 +9,6 @@ import id.dekz.code.retrofitexample.model.User;
  */
 public class JSONResponse {
 
-    /*
-    private User[] user;
-
-    public User[] getUser(){
-        return user;
-    }
-    */
-
     private List<User> users;
 
     public List<User> getUsers(){

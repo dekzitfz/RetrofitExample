@@ -1,6 +1,5 @@
-package id.dekz.code.retrofitexample;
+package id.dekz.code.retrofitexample.act;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,17 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.google.gson.JsonParser;
-
-import org.json.JSONArray;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+import id.dekz.code.retrofitexample.R;
 import id.dekz.code.retrofitexample.adapter.RecyclerViewAdapter;
+import id.dekz.code.retrofitexample.intf.OnItemClickListener;
+import id.dekz.code.retrofitexample.intf.RequestInterface;
 import id.dekz.code.retrofitexample.model.User;
-import id.dekz.code.retrofitexample.util.JSONResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -72,7 +68,6 @@ public class RecyclerViewAct extends AppCompatActivity implements OnItemClickLis
 
                 ArrayList<User> listUser = new ArrayList<User>();
                 for (int i=0; i<users.size(); i++){
-                    Log.d("response "+i+": ", ""+users.get(i).getAvatar_url());
                     listUser.add(users.get(i));
                 }
 

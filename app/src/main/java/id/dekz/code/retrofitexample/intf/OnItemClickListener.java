@@ -1,4 +1,4 @@
-package id.dekz.code.retrofitexample;
+package id.dekz.code.retrofitexample.intf;
 
 import android.view.View;
 

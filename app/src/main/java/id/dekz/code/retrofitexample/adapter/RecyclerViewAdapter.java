@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import id.dekz.code.retrofitexample.OnItemClickListener;
+import id.dekz.code.retrofitexample.intf.OnItemClickListener;
 import id.dekz.code.retrofitexample.R;
 import id.dekz.code.retrofitexample.model.User;
 
